@@ -1,18 +1,13 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Build RAG Chatbot Application using Streamlit
+This is a project for creating a RAG chatbot in Vietnamese languague.
+Information
+Embedding model:bkai-foundation-models/vietnamese-bi-encoder
+LLM model (by default): vicuna-7b-v1.5
+Original features
+Upload and embed a PDF file.
+Make questions based on the file.
+Added features
+Upload multiple PDF files.
+AI model customizable: The AI model vicuna-7b-v1.5 is loaded by default. User can choose another LLM model. In this case, the webpage will be reloaded.
+How to run
+streamlit run notebooks/rag_chatbot_app.py & npx localtunnel --port 8501
